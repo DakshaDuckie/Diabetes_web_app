@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Diabetes Manager Login Screen</title>
+	<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="login.js"></script>
+</head>
+
+<body>
+	<center>
+		<h1 class="header">
+			Diabetes Manager
+		</h1>
+		<br>
+		<div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
+			<img src="logo.png" class="logo">
+			<h3>Control Your Blood Sugar!</h3>
+			<h4>Start using today!</h4>
+			<div class="form-group">
+				<label>Email ID:</label>
+				<input class='form-control' id="user_name" placeholder="Enter email here.">
+			</div>
+			<button id="login_button" class="btn btn-primary" onclick="log_in()">Log in</button>
+			<br><br>
+		</div>
+		<footer id="footer">Created by Daksha Ranjan (daksharanjan11@gmail.com)</footer>
+	</center>
+</body>
+
+</html>

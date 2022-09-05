@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Insulin Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <button id="logout" class="btn btn-danger" onclick="logout()">Log-out</button>
+    <center>
+        <h1>Insulin Calculator</h1>
+        <h2>Enter all the data needed, then hit send for you calculated amount of insulin</h2>
+        <div class="form_group" style="width: 50%;">
+            <label>Carb Amount</label>
+            <input class="form-control" id="carb_input" placeholder="Enter carb amount over here">
+        </div>
+        <br>
+        <div class="form_group" style="width: 50%;">
+            <label>Insulin to Carb Ratio (ask your doctor for this)</label>
+            <input class="form-control" id="ratio_input" placeholder="Enter ratio over here">
+        </div>
+        <br>
+        <div class="form_group" style="width: 50%;">
+            <label>Current Blood Glucose</label>
+            <input class="form-control" id="rn_bg_input" placeholder="Enter current BG over here">
+        </div>
+        <div class="form_group" style="width: 50%;">
+            <label>Target Blood Glucose (ask your doctor for this)</label>
+            <input class="form-control" id="target_bg_input" placeholder="Enter target BG over here">
+        </div>
+        <br>
+        <div class="form_group" style="width: 50%;">
+            <label>Correction Factor (ask your doctor for this)</label>
+            <input class="form-control" id="correction_factor_input" placeholder="Enter correction factor over here">
+        </div>
+        <br>
+        <button id="btn_calculate" class="btn btn-info" onclick="calcClick()">Calculate</button>
+        <br>
+        <h4>Amount of Insulin needed: <span id="insulin_result"></span></h4>
+        <br>
+        <button id="home_btn" class="btn btn-primary" onclick="homeScreen()">Home Screen</button>
+        <footer id="footer">Created by Daksha Ranjan (daksharanjan11@gmail.com)</footer>
+    </center>
+    <script src="insulinCalc.js"></script>
+</body>

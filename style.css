@@ -1,0 +1,79 @@
+html, body
+{
+  height: 100%;
+  margin: 0;
+}
+
+body{
+    background-color: rgb(161, 190, 216);
+	font-family: 'Playfair Display';
+}
+
+.header
+{
+	color: rgb(34, 53, 71);
+	font-size: 45px;
+	margin-top: 80px;
+}
+.header img
+{
+	width: 80px;
+	margin-left: -15px;
+}
+
+.login_div
+{
+	background: rgb(205, 212, 246);
+	float: none;
+	border-radius: 15px;
+}
+
+.logo
+{
+	width: 80px;margin-top: 30px;border-radius: 40px;
+}
+
+#login_button
+{
+	width: 80%;border-radius: 15px;
+}
+
+#footer{
+	font-size: larger;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(91, 114, 136);
+    color: rgb(141, 195, 248);
+}
+
+#logout{
+	width: 100px;
+	height: 70px;
+	font-size: large;
+	margin: 10px;
+}
+
+#output{
+	padding: 10px; 
+	width:80%;
+	background: rgba(255,255,255,0.8);
+	border-radius: 15px;
+}
+
+.type_message_area{
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	background: rgba(255,255,255,0.8);
+}
+
+.color_white
+{
+	color: white;
+}
+
+.buttons{
+	width: 30%;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Carbohydrate Logs</title>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <button id="logout" class="btn btn-danger" onclick="logout()">Log-out</button>
+    <center>
+        <h1>Carbohydrate Logs</h1>
+        <h3>To log your carb count, enter it in the text input below and click the log button</h3>
+        <br>
+        <div class="form_group" style="width: 50%;">
+            <input class="form-control" id="carbs_input" placeholder="Enter carb amounts over here">
+        </div>
+        <br>
+        <button id="log_btn" class="btn btn-info" onclick="addCarbs()">Log amount</button>
+        <br> <br>
+        <div id="carb_list" class="output">
+
+        </div>
+        <br>
+        <button id="home_btn" class="btn btn-primary" onclick="homeScreen()">Home Screen</button>
+        <footer id="footer">Created by Daksha Ranjan (daksharanjan11@gmail.com)</footer>
+    </center>
+    <script src="carbLogs.js"></script>
+</body>

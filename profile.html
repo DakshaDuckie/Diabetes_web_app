@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Diabetes Manager User Details Screen</title>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <body>
+        <button id="logout" class="btn btn-danger" onclick="logout()">Log-out</button>
+        <center>
+            <h1>Your Profile</h1>
+            <h3>Over here, you can see all your username details</h2>
+            <div id="detail_span">
+                <h3>Username: <span id="user_span"></span></h3>
+                <h3>Last BG logged: <span id="bg_span"></span></h3>
+                <h3>Last carb logged: <span id="carb_span"></span></h3>
+                <h3>Last insulin calculated: <span id="insulin_span"></span></h3>
+                <h3>Profile Picture:</h3>
+                <img id="profile_pic" src="no_pic_yet.png">
+            </div>
+            <span>
+                <label>If you don't see you in your picture, click here to take a photo ==>   </label>
+                <button class="btn btn-info" onclick="toPfp()">Take Profile Pic</button>
+            </span>
+            <footer id="footer">Created by Daksha Ranjan (daksharanjan11@gmail.com)</footer>
+        </center>
+        <script src="profile.js"></script>
+    </body>

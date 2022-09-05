@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Diabetes Chat-bot</title>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <button id="logout" class="btn btn-danger" onclick="logout()">Log-out</button>
+<center>
+    <h1>Diabetes Chat-bot</h1>
+    <h3>Type in hello into the chatbot to begin.</h3>
+    <br>
+    <iframe
+    allow="microphone;"
+    width="100%"
+    height="700"
+    src="https://console.dialogflow.com/api-client/demo/embedded/42ccf301-b87a-46df-8891-134d9774b7e7">
+</iframe>
+<br><br><br>
+    <footer id="footer">Created by Daksha Ranjan (daksharanjan11@gmail.com)</footer>
+</center>
+    <script src="chatbot.js"></script>
+</body>
